@@ -19,22 +19,22 @@
 </noscript>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://www.weebly.com/editor/uploads/1/2/6/6/12661029/custom_themes/412016994755954965/files/jquery.googlecalreader-1.1.min.js"></script>
 <script type="text/javascript" src="www.weebly.com/editor/uploads/1/2/6/6/12661029/custom_themes/412016994755954965/files/feed_parser.js"></script>
-
-
-		<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
-<link rel="stylesheet" type="text/css" href="http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1234" />
-<link rel="stylesheet" type="text/css" href="files/main_style.css?1444188566" title="wsite-theme-css" />
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1478346535" title="wsite-theme-css" />
 <link href='http://fonts.googleapis.com/css?family=Belgrano&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Baumans&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Brawler&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
 
 <link href='http://cdn1.editmysite.com/editor/fonts/Aller/font.css?2' rel='stylesheet' type='text/css' />
 <style type='text/css'>
-.wsite-elements.wsite-not-footer div.paragraph, .wsite-elements.wsite-not-footer p, .wsite-elements.wsite-not-footer .product-block .product-title, .wsite-elements.wsite-not-footer .product-description, .wsite-elements.wsite-not-footer .wsite-form-field label, .wsite-elements.wsite-not-footer .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:14px !important;}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:14px !important;}
 #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#2a2a2a !important;}
 .wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
-.wsite-elements.wsite-not-footer h2, .wsite-elements.wsite-not-footer .product-long .product-title, .wsite-elements.wsite-not-footer .product-large .product-title, .wsite-elements.wsite-not-footer .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
 #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#2a2a2a !important;}
 .wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
 #wsite-title {font-family:"Aller" !important;}
@@ -45,8 +45,8 @@
 .fancybox-title {}
 .wslide-caption-text {}
 .wsite-phone {}
-.wsite-headline {}
-.wsite-headline-paragraph {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
 .wsite-button-inner {}
 .wsite-not-footer blockquote {}
 .wsite-footer blockquote {}
@@ -54,29 +54,31 @@
 #wsite-content h2.wsite-product-title {}
 .wsite-product .wsite-product-price a {}
 </style>
-<link rel='stylesheet' type='text/css' href='http://cdn1.editmysite.com/editor/images/slideshow/slideshow.css?1234' />
+<link rel='stylesheet' type='text/css' href='http://cdn2.editmysite.com/css/old/slideshow/slideshow.css?1234' />
 
 		<script><!--
 var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
 var STYLE_PREFIX = 'wsite';
 //-->
 </script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
 
-<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type='text/javascript' src='http://cdn1.editmysite.com/editor/libraries/slideshow-jq.js?buildTime=1234'></script>
-<script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/ftl.js?buildTime=1234"></script><script>_W.relinquish && _W.relinquish()</script>
-<script type="text/javascript"><!--
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type='text/javascript' src='http://cdn2.editmysite.com/js/old/slideshow-jq.js?buildTime=1234'></script>
+<script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"><!--
 	var IS_ARCHIVE = 1;
 	var DISABLE_NAV_MORE = 1;
 	(function(jQuery){
 		function initFlyouts(){
 			initPublishedFlyoutMenus(
-				[{"id":"878768277360477994","title":"About ORS","url":"http:\/\/open-robotics-school.org\/who-we-are.html","target":""},{"id":"518667935196962983","title":"Admissions","url":"admissions.html","target":""},{"id":"593361802691767266","title":"Studies","url":"http:\/\/open-robotics-school.org\/what-to-study.html","target":""},{"id":"578007167267860242","title":"Wiki","url":"http:\/\/wiki.open-robotics-school.org","target":"_blank"},{"id":"821458042910311961","title":"Calendar","url":"calendar.html","target":""},{"id":"544265752482100488","title":"Blog","url":"blog.html","target":""}],
+				[{"id":"878768277360477994","title":"About ORS","url":"http:\/\/open-robotics-school.org\/who-we-are.html","target":"","nav_menu":false,"nonclickable":false},{"id":"518667935196962983","title":"Admissions","url":"admissions.html","target":"","nav_menu":false,"nonclickable":false},{"id":"593361802691767266","title":"Studies","url":"http:\/\/open-robotics-school.org\/what-to-study.html","target":"","nav_menu":false,"nonclickable":false},{"id":"578007167267860242","title":"Wiki","url":"http:\/\/wiki.open-robotics-school.org","target":"_blank","nav_menu":false,"nonclickable":false},{"id":"821458042910311961","title":"Calendar","url":"calendar.html","target":"","nav_menu":false,"nonclickable":false},{"id":"387080580395707008","title":"G+","url":"https:\/\/plus.google.com\/112578800953029754349","target":"_blank","nav_menu":false,"nonclickable":false},{"id":"544265752482100488","title":"Blog","url":"blog.html","target":"","nav_menu":false,"nonclickable":false}],
 				"391471996301214819",
 				'',
 				'active',
 				false,
-				{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-item-wrap\"\n\t>\n\t<a href=\"{{url}}\"\n\t\t{{#target}}target=\"{{target}}\"{{\/target}}\n\t\tclass=\"wsite-menu-item\"\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a href=\"{{url}}\"\n\t\t{{#target}}target=\"{{target}}\"{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+				{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
 				{}
 			)
 		}
@@ -90,6 +92,7 @@ var STYLE_PREFIX = 'wsite';
 //-->
 </script>
 		<script type="text/javascript" src="http://www.weebly.com/editor/uploads/1/2/6/6/12661029/custom_themes/412016994755954965/files/feed_parser.js"></script>
+		
 	</head>
 	<body class=" no-header-page  wsite-theme-light  wsite-page-index"><div id="header-wrap">
 	<div id="page">
@@ -125,11 +128,9 @@ var STYLE_PREFIX = 'wsite';
 	<div id="page">
 		<div id="topnav">
 			<ul class="wsite-menu-default">
-					<li id="pg878768277360477994"
-						class="wsite-menu-item-wrap"
-						>
-						<a href="http://open-robotics-school.org/who-we-are.html"
-							
+					<li id="pg878768277360477994" class="wsite-menu-item-wrap">
+						<a
+									href="http://open-robotics-school.org/who-we-are.html"
 							class="wsite-menu-item"
 							>
 							About ORS
@@ -139,8 +140,8 @@ var STYLE_PREFIX = 'wsite';
 		<li id="wsite-nav-965421779311580330"
 	class="wsite-menu-subitem-wrap "
 	>
-	<a href="who-we-are.html"
-		
+	<a
+				href="who-we-are.html"
 		class="wsite-menu-subitem"
 		>
 		<span class="wsite-menu-title">
@@ -152,8 +153,8 @@ var STYLE_PREFIX = 'wsite';
 <li id="wsite-nav-528805616198197891"
 	class="wsite-menu-subitem-wrap "
 	>
-	<a href="mission--vision.html"
-		
+	<a
+				href="mission--vision.html"
 		class="wsite-menu-subitem"
 		>
 		<span class="wsite-menu-title">
@@ -165,8 +166,8 @@ var STYLE_PREFIX = 'wsite';
 <li id="wsite-nav-981104649281299405"
 	class="wsite-menu-subitem-wrap "
 	>
-	<a href="contact-us.html"
-		
+	<a
+				href="contact-us.html"
 		class="wsite-menu-subitem"
 		>
 		<span class="wsite-menu-title">
@@ -180,22 +181,18 @@ var STYLE_PREFIX = 'wsite';
 </div>
 
 					</li>
-					<li id="pg518667935196962983"
-						class="wsite-menu-item-wrap"
-						>
-						<a href="admissions.html"
-							
+					<li id="pg518667935196962983" class="wsite-menu-item-wrap">
+						<a
+									href="admissions.html"
 							class="wsite-menu-item"
 							>
 							Admissions
 						</a>
 						
 					</li>
-					<li id="pg593361802691767266"
-						class="wsite-menu-item-wrap"
-						>
-						<a href="http://open-robotics-school.org/what-to-study.html"
-							
+					<li id="pg593361802691767266" class="wsite-menu-item-wrap">
+						<a
+									href="http://open-robotics-school.org/what-to-study.html"
 							class="wsite-menu-item"
 							>
 							Studies
@@ -205,8 +202,8 @@ var STYLE_PREFIX = 'wsite';
 		<li id="wsite-nav-440465952727439124"
 	class="wsite-menu-subitem-wrap "
 	>
-	<a href="what-to-study.html"
-		
+	<a
+				href="what-to-study.html"
 		class="wsite-menu-subitem"
 		>
 		<span class="wsite-menu-title">
@@ -218,8 +215,8 @@ var STYLE_PREFIX = 'wsite';
 <li id="wsite-nav-523534391590183435"
 	class="wsite-menu-subitem-wrap "
 	>
-	<a href="student-support.html"
-		
+	<a
+				href="student-support.html"
 		class="wsite-menu-subitem"
 		>
 		<span class="wsite-menu-title">
@@ -233,33 +230,38 @@ var STYLE_PREFIX = 'wsite';
 </div>
 
 					</li>
-					<li id="pg578007167267860242"
-						class="wsite-menu-item-wrap"
-						>
-						<a href="http://wiki.open-robotics-school.org"
-							target="_blank"
+					<li id="pg578007167267860242" class="wsite-menu-item-wrap">
+						<a
+									href="http://wiki.open-robotics-school.org"
+								target="_blank"
 							class="wsite-menu-item"
 							>
 							Wiki
 						</a>
 						
 					</li>
-					<li id="pg821458042910311961"
-						class="wsite-menu-item-wrap"
-						>
-						<a href="calendar.html"
-							
+					<li id="pg821458042910311961" class="wsite-menu-item-wrap">
+						<a
+									href="calendar.html"
 							class="wsite-menu-item"
 							>
 							Calendar
 						</a>
 						
 					</li>
-					<li id="pg544265752482100488"
-						class="wsite-menu-item-wrap"
-						>
-						<a href="blog.html"
-							
+					<li id="pg387080580395707008" class="wsite-menu-item-wrap">
+						<a
+									href="https://plus.google.com/112578800953029754349"
+								target="_blank"
+							class="wsite-menu-item"
+							>
+							G&plus;
+						</a>
+						
+					</li>
+					<li id="pg544265752482100488" class="wsite-menu-item-wrap">
+						<a
+									href="blog.html"
 							class="wsite-menu-item"
 							>
 							Blog
@@ -277,8 +279,8 @@ var STYLE_PREFIX = 'wsite';
 			<div id="banner">
 				<div class="wsite-header"></div>
 			</div>
-			<div id="content"><div id='wsite-content' class='wsite-elements wsite-not-footer'>
-<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+			<div id="content"><div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
 	<table class="wsite-multicol-table">
 		<tbody class="wsite-multicol-tbody">
 			<tr class="wsite-multicol-tr">
@@ -303,7 +305,7 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 					
 						
 
-<div class="paragraph" style="text-align:justify;"><font size="3">The Open Robotics School (ORS) is a non-profit initiative to help people learning theory and technology of <a title="" target="_blank" href="http://en.wikipedia.org/wiki/Robotics">Robotics</a> based on existing resources as MOOCs (Udacity, Coursera, etc), OCWs and OERs available in the web. In addition to these resources, the Open Robotics School creates extra content (exercises, projects, seminars, specific courses) to extend the knowledge get using the external resources.<br /><br /><span>The Open Robotics School is a kind of meta-school over existing course websites, initiatives, and </span>on-line and free resources.<br /></font><br /><span></span><br /><span></span></div>
+<div class="paragraph" style="text-align:justify;"><font size="3">The Open Robotics School (ORS) is a non-for-profit initiative to help people learning theory and technology of <a target="_blank" href="http://en.wikipedia.org/wiki/Robotics">Robotics</a> based on existing resources as MOOCs (Udacity, Coursera, etc), OCWs and OERs available in the web. In addition to these resources, the Open Robotics School creates extra content (exercises, projects, seminars, specific courses) to extend the knowledge get using the external resources.<br /><br /><span>The Open Robotics School is a kind of meta-school over existing course websites, initiatives, and </span>on-line and free resources.</font><br /><br /><br /></div>
 
 
 					
@@ -320,14 +322,15 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 					
 						
 
-<h2 class="wsite-content-title" style="text-align:left;">Upcaming Events<br /></h2>
+<h2 class="wsite-content-title" style="text-align:left;">Upcaming Events</h2>
 
-<div><div id="619289292316874216" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2F6g4klrjsggii8ai7cgegl1tbrg%2540group.calendar.google.com%2Fpublic%2Fbasic&num=5&desc=22&utf=y"  charset="UTF-8" type="text/javascript"></script>
+<div><div id="619289292316874216" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><!-- start feedwind code -->
+<script type="text/javascript">
+document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "gcal://6g4klrjsggii8ai7cgegl1tbrg@group.calendar.google.com",rssmikle_frame_width: "300",rssmikle_frame_height: "400",frame_height_by_article: "5",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "13",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "justify",corner: "off",scrollbar: "off",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "75",rssmikle_item_title_color: "#1C613F",rssmikle_item_border_bottom: "off",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %k:%M %Z",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "5",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:300px;"></div>
 
 <noscript>
-<a href="http://open-robotics-school.org/calendar.html">Calendar entries of @ORS</a>
-</noscript>
-</div>
+<a href="http://open-robotics-school.org/1/feed">Posts by @ORS</a>
+</noscript></div>
 
 
 
@@ -341,7 +344,7 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 
 <h2 class="wsite-content-title" style="text-align:left;">Headlines</h2>
 
-<div><div id="288179628801099680" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fopen-robotics-school.org%2F1%2Ffeed&num=5&au=y&date=y&utf=y"  charset="UTF-8" type="text/javascript"></script>
+<div><div id="288179628801099680" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://www.open-robotics-school.org/1/feed",rssmikle_frame_width: "250",rssmikle_frame_height: "400",frame_height_by_article: "5",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "13",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "justify",corner: "off",scrollbar: "off",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "100",rssmikle_item_title_color: "#1C613F",rssmikle_item_border_bottom: "off",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %k:%M %Z",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "5",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:300px;"></div>
 
 <noscript>
 <a href="http://open-robotics-school.org/1/feed">Posts by @ORS</a>
@@ -357,14 +360,13 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 					
 						
 
-<h2 class="wsite-content-title" style="text-align:left;">Robotics News<br /></h2>
+<h2 class="wsite-content-title" style="text-align:left;">Robotics News</h2>
 
-<div><div id="390722763169194632" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fpipes.yahoo.com%2Fpipes%2Fpipe.run%3F_id%3D8469d40dab79ee00e45354987db7dd34%26_render%3Drss&num=5&date=y&utf=y"  charset="UTF-8" type="text/javascript"></script>
+<div><div id="390722763169194632" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://feeds.feedburner.com/IeeeSpectrumRobotics|http://planet.ros.org/rss20.xml|http://feeds.sciencedaily.com/sciencedaily/matter_energy/robotics|http://robohub.org/feed",rssmikle_frame_width: "300",rssmikle_frame_height: "400",frame_height_by_article: "5",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "13",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "justify",corner: "off",scrollbar: "off",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "100",rssmikle_item_title_color: "#1C613F",rssmikle_item_border_bottom: "off",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %k:%M %Z",item_description_style: "text",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "5",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:300px;"></div>
 
 <noscript>
-<a href="http://pipes.yahoo.com/pipes/pipe.run?_id=8469d40dab79ee00e45354987db7dd34&_render=rss">Information about Robotics</a>
-</noscript>
-</div>
+<a href="http://open-robotics-school.org/1/feed">Worldwide news about Robotics</a>
+</noscript></div>
 
 
 
@@ -389,7 +391,7 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 					
 						
 
-<div class="paragraph" style="text-align:center;">Copyright (c)&nbsp;2015 &nbsp;- Open Robotics School, a <a href="http://www.xyz-lab.org.es/" target="_blank" title="">xyz-lab</a>'s project.<br /></div>
+<div class="paragraph" style="text-align:center;">Copyright (c)&nbsp;2014-2016 &nbsp;- Open Robotics School, a <a href="http://xyz-lab.org.es" target="_blank">xyz-lab</a>'s initiaive.</div>
 
 
 					
@@ -404,7 +406,8 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 				</td>			</tr>
 		</tbody>
 	</table>
-</div></div></div></div>
+</div></div></div>
+</div>
 </div>
 		</div>
 	</div>
@@ -415,7 +418,6 @@ jQuery ? jQuery(init) : document.observe('dom:loaded', init)
 	</div>
 </div>
 
-		
 		
 	</body>
 </html>
