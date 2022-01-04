@@ -1,4 +1,4 @@
-# ors-website
+# ORSA Websites
 
 Here is stored source code of different sites of the school:
 * The web - http://www.open-robotics-school.org
